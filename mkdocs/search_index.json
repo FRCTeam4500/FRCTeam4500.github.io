@@ -24,6 +24,21 @@
             "location": "/gs/",
             "text": "",
             "title": "Getting Started"
+        },
+        {
+            "location": "/java/",
+            "text": "",
+            "title": "Java"
+        },
+        {
+            "location": "/wpi/",
+            "text": "",
+            "title": "WPI"
+        },
+        {
+            "location": "/opencv/",
+            "text": "",
+            "title": "OpenCV"
         }
     ]
 }
