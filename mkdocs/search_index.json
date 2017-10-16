@@ -22,8 +22,28 @@
         },
         {
             "location": "/gs/",
-            "text": "",
+            "text": "What do I need to have installed?\n\n\n\n\nJDK 8 as of 2018\n\n\nEclipse\n\n\nWPILIB\n\n\n\n\nHow do I install JDK 8?\n\n\nHow do I install Eclipse?\n\n\nHow do I install WPILIB?",
             "title": "Getting Started"
+        },
+        {
+            "location": "/gs/#what-do-i-need-to-have-installed",
+            "text": "JDK 8 as of 2018  Eclipse  WPILIB",
+            "title": "What do I need to have installed?"
+        },
+        {
+            "location": "/gs/#how-do-i-install-jdk-8",
+            "text": "",
+            "title": "How do I install JDK 8?"
+        },
+        {
+            "location": "/gs/#how-do-i-install-eclipse",
+            "text": "",
+            "title": "How do I install Eclipse?"
+        },
+        {
+            "location": "/gs/#how-do-i-install-wpilib",
+            "text": "",
+            "title": "How do I install WPILIB?"
         },
         {
             "location": "/java/",
