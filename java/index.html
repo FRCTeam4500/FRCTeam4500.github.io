@@ -62,6 +62,23 @@
     <a class="current" href="./">Java</a>
     <ul class="subnav">
             
+    <li class="toctree-l2"><a href="#what-is-java">What is Java?</a></li>
+    
+
+    <li class="toctree-l2"><a href="#how-do-i-learn-java-or-any-other-programming-language">How do I learn Java or any other programming language?</a></li>
+    
+
+    <li class="toctree-l2"><a href="#java-reference-guide">Java Reference Guide</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#variables">Variables</a></li>
+        
+            <li><a class="toctree-l3" href="#arithmetic-and-conditional-operators">Arithmetic and Conditional Operators</a></li>
+        
+        </ul>
+    
+
     </ul>
 	    </li>
           
@@ -107,7 +124,202 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="what-is-java">What is Java?</h1>
+<p>Java is a computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. The principle idea behind Java's design is being able to run on any platform that has the Java Virtual Machine (JVM) installed.</p>
+<h1 id="how-do-i-learn-java-or-any-other-programming-language">How do I learn Java or any other programming language?</h1>
+<p>Many people initialy find programming very confusing to learn. The main reason is that when you program, you need to think like a computer. Once you understand the computational thinking that programming intails, it becomes much easier. If you are struggling to learn Java, you could try using <a href="https://scratch.mit.edu/">Scratch</a> which lets you learn the most important concepts while not having to worry about the syntax since you just drag and drop blocks.</p>
+<p>Once you learn the bascis, make sure to try and work on a simple project (such as a basic calculator, number guessing game, or rock paper scissors) in order to reinforce concepts. A great place to go if you are struggling and need help is <a href="https://stackoverflow.com/">StackOverflow</a>.</p>
+<h1 id="java-reference-guide">Java Reference Guide</h1>
+<h2 id="variables">Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Example Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td>An integer value with a minimum value of -2^31 and a maximum value of 2^31-1</td>
+<td>Lives remaining, amount of times an event occured, or motor port values</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Any positive or negative decimal value</td>
+<td>Amount of money someone has, speed that a motor should run at, or pi</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>true or false</td>
+<td>Wheather or not it is raining or a pistion extended or retracted</td>
+</tr>
+<tr>
+<td>String</td>
+<td>A char array that creates text</td>
+<td>A movie title, lyrics to a song, text message</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="java">int numOfClicks = 902;
+int lineNumber = 18;
+int livesRemaining = 3;
+int health = -1;
+
+double PI = 3.14;
+double money = 1253.29;
+
+boolean isRaining = false;
+boolean isAlive = true;
+
+String name = &quot;Bob&quot;;
+String movieTitle = &quot;Star Wars: A New Hope&quot;;
+</code></pre>
+
+<h2 id="arithmetic-and-conditional-operators">Arithmetic and Conditional Operators</h2>
+<h3 id="arithmetic-operators">Arithmetic Operators</h3>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Additive operator (also used for String concatination)</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction operator</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication operator</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Division operator</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Remainder operator</td>
+</tr>
+<tr>
+<td>++</td>
+<td>Increment operator; increments a value by 1</td>
+</tr>
+<tr>
+<td>--</td>
+<td>Decrement operator; decrements a value by 1</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Logical complement operator; inverts the value of a boolean</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="java">int addition = 12 + 3;
+int subtraction = 219 - 5;
+double multiplication = 2.5 * -5;
+double division = 1000/120;
+int remainder = 10 % 7; // Returns 3
+double remainderTwo = 5.0 % 2 // Returns 1
+
+int x = 2;
+int y = 3;
+int answer = x*y; // Returns 6
+double orderOfOperations = (2.5+3-x)*2.0/y 
+
+int result = 0;
+result++; // result = 1
+result++; // result = 2
+result--; // result = 1
+
+boolean isTrue = true;
+boolean inverse = !isTrue; // Returns false
+</code></pre>
+
+<p><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html">More info here</a>
+ (</p>
+<h3 id="conditional-operators-and-if-statements">Conditional Operators (and if statements)</h3>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal to</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Greater than or equal to</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal to</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>And</td>
+</tr>
+<tr>
+<td>&#124;&#124;</td>
+<td>Or</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="java">int value1 = 1;
+int value2 = 2;
+
+if(value1 == value2) {
+   System.out.println(&quot;False&quot;);
+}
+if(value1 != value2) {
+  System.out.println(&quot;True&quot;);
+}
+if(value1 &gt; value2) {
+  System.out.println(&quot;False&quot;);
+}
+if(value1 &gt;= value2) {
+  System.out.println(&quot;False&quot;);
+}
+if(value1 &lt; value2) {
+  System.out.println(&quot;True&quot;);
+}
+if(value1 &lt;= value2) {
+  System.out.println(&quot;True&quot;);
+}
+
+
+if((value1 == 1) &amp;&amp; (value2 == 2)) {
+  System.out.println(&quot;True&quot;);
+}
+
+if((value1 != 1) || (value2 &gt;= 2)) {
+  System.out.println(&quot;True&quot;);
+}
+</code></pre>
+
+<p><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html">More info here</a></p>
               
             </div>
           </div>
