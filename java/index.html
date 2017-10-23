@@ -78,6 +78,8 @@
         
             <li><a class="toctree-l3" href="#control-flow">Control Flow</a></li>
         
+            <li><a class="toctree-l3" href="#arrays">Arrays</a></li>
+        
         </ul>
     
 
@@ -367,6 +369,39 @@ while(true) {
 </code></pre>
 
 <p><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html">More info here</a></p>
+<h3 id="for-loop">For loop</h3>
+<pre><code class="java">// Standard for loop
+for (int i=0; i&lt;10; i++) {
+    System.out.println(&quot;i is &quot; + i);
+}
+
+// Loops through items in a list
+int[] numbers = {10, 23, -2, 43};
+for (int i=0; i &lt; numbers.length(); i++) {
+    System.out.println(numbers[i]);
+}
+
+// This also loops through items in a list but is more efficient
+String[] food = {&quot;Taco&quot;, &quot;Pizza&quot;, &quot;Chicken&quot;, &quot;Salad&quot;};
+for (String item : food) {
+    System.out.println(item);
+}
+</code></pre>
+
+<p><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html">More info here</a></p>
+<h2 id="arrays">Arrays</h2>
+<pre><code class="java">int[] intArray = new int[10];
+intArray[0] = 1;
+intArray[1] = 2;
+
+String[] food = {&quot;Blueberry&quot;, &quot;Raspberry&quot;, &quot;Peach&quot;};
+Wheel[] wheels = {FlWheel, FRWheel, BLWheel, BRWheel};
+
+int[][] cords = {{1, 2}, {2, 5}, {-2,-3}, {-4, 2}};
+System.out.println(cords[2][0]) // Prints -2
+</code></pre>
+
+<p><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html">More info here</a></p>
               
             </div>
           </div>
