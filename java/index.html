@@ -68,7 +68,7 @@
     <li class="toctree-l2"><a href="#how-do-i-learn-java-or-any-other-programming-language">How do I learn Java or any other programming language?</a></li>
     
 
-    <li class="toctree-l2"><a href="#java-reference-guide">Java Reference Guide</a></li>
+    <li class="toctree-l2"><a href="#java-reference">Java Reference</a></li>
     
         <ul>
         
@@ -76,9 +76,15 @@
         
             <li><a class="toctree-l3" href="#arithmetic-and-conditional-operators">Arithmetic and Conditional Operators</a></li>
         
-            <li><a class="toctree-l3" href="#control-flow">Control Flow</a></li>
+            <li><a class="toctree-l3" href="#if-then-and-if-then-else-statement">if-then and if-then-else statement</a></li>
+        
+            <li><a class="toctree-l3" href="#while-statement">While Statement</a></li>
+        
+            <li><a class="toctree-l3" href="#for-loop">For Loop</a></li>
         
             <li><a class="toctree-l3" href="#arrays">Arrays</a></li>
+        
+            <li><a class="toctree-l3" href="#public-private-static-and-void">public, private, static, and void</a></li>
         
         </ul>
     
@@ -133,7 +139,7 @@
 <h1 id="how-do-i-learn-java-or-any-other-programming-language">How do I learn Java or any other programming language?</h1>
 <p>Many people initialy find programming very confusing to learn. The main reason is that when you program, you need to think like a computer. Once you understand the computational thinking that programming intails, it becomes much easier. If you are struggling to learn Java, you could try using <a href="https://scratch.mit.edu/">Scratch</a> which lets you learn the most important concepts while not having to worry about the syntax since you just drag and drop blocks.</p>
 <p>Once you learn the bascis, make sure to try and work on a simple project (such as a basic calculator, number guessing game, or rock paper scissors) in order to reinforce concepts. A great place to go if you are struggling and need help is <a href="https://stackoverflow.com/">StackOverflow</a>.</p>
-<h1 id="java-reference-guide">Java Reference Guide</h1>
+<h1 id="java-reference">Java Reference</h1>
 <h2 id="variables">Variables</h2>
 <table>
 <thead>
@@ -324,8 +330,7 @@ if((value1 != 1) || (value2 &gt;= 2)) {
 </code></pre>
 
 <p><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html">More info here</a></p>
-<h2 id="control-flow">Control Flow</h2>
-<h3 id="if-then-and-if-then-else-statement">If-then and If-then-else Statement</h3>
+<h2 id="if-then-and-if-then-else-statement">if-then and if-then-else statement</h2>
 <pre><code class="java">int testscore = 90;
 String grade;
 
@@ -350,7 +355,7 @@ if (isRaining) {
 </code></pre>
 
 <p><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html">More info here</a></p>
-<h3 id="while-statement">While Statement</h3>
+<h2 id="while-statement">While Statement</h2>
 <pre><code class="java">int count = 0;
 int total = 0;
 while (count &lt; 10) {
@@ -369,7 +374,7 @@ while(true) {
 </code></pre>
 
 <p><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html">More info here</a></p>
-<h3 id="for-loop">For loop</h3>
+<h2 id="for-loop">For Loop</h2>
 <pre><code class="java">// Standard for loop
 for (int i=0; i&lt;10; i++) {
     System.out.println(&quot;i is &quot; + i);
@@ -395,13 +400,64 @@ intArray[0] = 1;
 intArray[1] = 2;
 
 String[] food = {&quot;Blueberry&quot;, &quot;Raspberry&quot;, &quot;Peach&quot;};
+System.out.println(food[1]); // Prints Raspberry
+
 Wheel[] wheels = {FlWheel, FRWheel, BLWheel, BRWheel};
 
-int[][] cords = {{1, 2}, {2, 5}, {-2,-3}, {-4, 2}};
-System.out.println(cords[2][0]) // Prints -2
+int[][] cords = {{1, 2}, {3, 4}, {5, 6}, {7, 8}};
+System.out.println(cords[2][0]) // Prints 5
 </code></pre>
 
 <p><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html">More info here</a></p>
+<h2 id="public-private-static-and-void">public, private, static, and void</h2>
+<p>| Keyword | Purpose                                |                         |
+|---------|------------------------------------------------------------|
+|public   |Other classes can access the field (variable/method)        |
+|private  |Other classes can't access the field                        |
+|static   |You don't need an instance of the class to access the field |
+|void     |The method doesn't return a value                           |</p>
+<pre><code class="java">public class ClassOne {
+    public static void main(String[] args) {
+        // ----- ClassTwo -----
+        ClassTwo secondClass = new ClassTwo();
+                System.out.println(secondClass.intOne); // This will print 2
+                System.out.println(secondClass.intTwo); // This will throw an error because intTwo is private   
+                System.out.println(secondClass.addNum(1, 2));
+
+        // ----- ClassThree -----
+                // Notice how you don't need to type ClassTwo secondClass = new ClassTwo() to access the classes fields
+        System.out.println(ClassThree.motorPort);
+                ClassThree.sayHi();
+    }
+}
+
+// ClassTwo doesn't use the static modifier so you must create 
+// an instance of the class inorder to access its variables and methods (ClassTwo name = new ClassTwo())
+public class ClassTwo {
+    public int intOne = 2;
+    private int intTwo = 3;
+
+        public void sayHi() {
+            System.out.println(&quot;Hi!&quot;);
+        }
+
+    public int addNum(int numOne, int numTwo) {
+        return numOne + numTwo;
+        }
+}
+
+// ClassThree uses the static modifier so you are able to access
+// its methods and fields without creating an instance of the class
+public class ClassThree {
+    public static int motorPort = 2;
+        public static String playerName = &quot;Bob&quot;;
+
+        public static void sayHi() {
+        System.out.println(&quot;Hi&quot;);   
+    }
+}
+
+</code></pre>
               
             </div>
           </div>
