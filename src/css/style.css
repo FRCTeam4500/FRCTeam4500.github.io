@@ -31,8 +31,6 @@ nav img {
   nav h3 {
     line-height: 50px;
   }
-
-  #
 }
 
 @media (max-width: 960px) {
@@ -42,8 +40,6 @@ nav img {
   nav h3 {
     line-height: 30px;
   }
-
-  #
 }
 
 @media (max-width: 770px) {
@@ -53,8 +49,6 @@ nav img {
   nav h3 {
     line-height: 40px;
   }
-
-  #
 }
 
 @media (max-width: 632px) {
@@ -64,9 +58,8 @@ nav img {
   nav h3 {
     line-height: 30px;
   }
-
-  #
 }
+
 /* Jumbotron */
 
 .jumbotron-fluid {
@@ -102,14 +95,6 @@ nav img {
   margin: -5px -10px -10px -15px;
 }
 
-.flip {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
-}
 
 /* Cards */
 
@@ -128,8 +113,22 @@ nav img {
   overflow: hidden;
 }
 
+/* Footer */
+footer {
+  padding: 40px;
+}
+
 /* Other */
 
 .text-center {
   text-align: center;
+}
+
+.flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
