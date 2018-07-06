@@ -1,0 +1,79 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "About",
+            "title": "Home"
+        },
+        {
+            "location": "/#about",
+            "text": "",
+            "title": "About"
+        },
+        {
+            "location": "/gettingStarted/gettingStarted/",
+            "text": "Installing JDK\n\n\nInstalling Eclipse\n\n\nInstalling WPI",
+            "title": "Setup"
+        },
+        {
+            "location": "/gettingStarted/gettingStarted/#installing-jdk",
+            "text": "",
+            "title": "Installing JDK"
+        },
+        {
+            "location": "/gettingStarted/gettingStarted/#installing-eclipse",
+            "text": "",
+            "title": "Installing Eclipse"
+        },
+        {
+            "location": "/gettingStarted/gettingStarted/#installing-wpi",
+            "text": "",
+            "title": "Installing WPI"
+        },
+        {
+            "location": "/gettingStarted/eclipse/",
+            "text": "",
+            "title": "Using Eclipse"
+        },
+        {
+            "location": "/tools/java/",
+            "text": "Variables\n\n\nOperators\n\n\nControl Flow\n\n\nLoops\n\n\nMethods",
+            "title": "Java"
+        },
+        {
+            "location": "/tools/java/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/tools/java/#operators",
+            "text": "",
+            "title": "Operators"
+        },
+        {
+            "location": "/tools/java/#control-flow",
+            "text": "",
+            "title": "Control Flow"
+        },
+        {
+            "location": "/tools/java/#loops",
+            "text": "",
+            "title": "Loops"
+        },
+        {
+            "location": "/tools/java/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/tools/wpi/",
+            "text": "",
+            "title": "WPI"
+        },
+        {
+            "location": "/tools/github/",
+            "text": "",
+            "title": "Github"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+site_name: '4500 Docs'
+pages:
+  - Home: index.md
+  - Getting Started: 
+      - Setup: gettingStarted/gettingStarted.md
+      - Using Eclipse: gettingStarted/eclipse.md
+  - Learning Tools:
+      - Java: 'tools/java.md'
+      - WPI: 'tools/wpi.md'
+      - Github: 'tools/github.md'
+theme:
+  name: 'rtd-dropdown'
