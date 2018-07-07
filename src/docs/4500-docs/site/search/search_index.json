@@ -2,27 +2,27 @@
     "docs": [
         {
             "location": "/",
-            "text": "About",
+            "text": "About\n\n\nThe following documentation is meant to help new members of 4500's programming team get started with Java. The guide is split up into 2 sections. The first section explains how to install and setup your development environment at home, as well as using Eclipse. The second sections will teach you the basics of Java, WPI, and Github.",
             "title": "Home"
         },
         {
             "location": "/#about",
-            "text": "",
+            "text": "The following documentation is meant to help new members of 4500's programming team get started with Java. The guide is split up into 2 sections. The first section explains how to install and setup your development environment at home, as well as using Eclipse. The second sections will teach you the basics of Java, WPI, and Github.",
             "title": "About"
         },
         {
             "location": "/gettingStarted/gettingStarted/",
-            "text": "Installing JDK\n\n\nInstalling Eclipse\n\n\nInstalling WPI",
+            "text": "Installing JDK\n\n\n\n\nNavigate to Oracle's \ndownload\n page for JDK 8. At the time of writting this guide, JDK 10 is the most recent; however, WPI only supports JDK 8.\n\n\nAccept the license agreement and download the correct x64 bit version for your operating system. \n\n\nOnce the download is complete, run the installer. Make sure to leave the install directory as its default.\n\n\nOnce the installation finishes, restart your computer.\n\n\nTo verify that Java installed correctly, open CMD if you are on Windows or Terminal if you are on macOS. If you type \"java -version\" and \"javac -version\", and do not get an error, you are done! Please note that the final three digits do not need to match the output of the image \n\n\n\n\nInstalling Eclipse\n\n\n\n\nNavigate to Eclipse's \ndownload\n page and click \"Download 64bit\" under the \"Get Eclipse <version>\" heading.\n\n\nRun the installer. Once it loads, select \"Eclipse IDE for Java Developers\" and then click the install button.\n\n\n\n\nInstalling WPI",
             "title": "Setup"
         },
         {
             "location": "/gettingStarted/gettingStarted/#installing-jdk",
-            "text": "",
+            "text": "Navigate to Oracle's  download  page for JDK 8. At the time of writting this guide, JDK 10 is the most recent; however, WPI only supports JDK 8.  Accept the license agreement and download the correct x64 bit version for your operating system.   Once the download is complete, run the installer. Make sure to leave the install directory as its default.  Once the installation finishes, restart your computer.  To verify that Java installed correctly, open CMD if you are on Windows or Terminal if you are on macOS. If you type \"java -version\" and \"javac -version\", and do not get an error, you are done! Please note that the final three digits do not need to match the output of the image",
             "title": "Installing JDK"
         },
         {
             "location": "/gettingStarted/gettingStarted/#installing-eclipse",
-            "text": "",
+            "text": "Navigate to Eclipse's  download  page and click \"Download 64bit\" under the \"Get Eclipse <version>\" heading.  Run the installer. Once it loads, select \"Eclipse IDE for Java Developers\" and then click the install button.",
             "title": "Installing Eclipse"
         },
         {
