@@ -127,7 +127,7 @@
     
     
 
-  <p class="caption">Learning Tools</p>
+  <p class="caption">Guide</p>
 
 
 <ul class="current" href="tools\java">
@@ -145,7 +145,6 @@
     
     
       
-  
   
   
   
@@ -183,7 +182,7 @@
 
 
   <li class="toctree-l2 toc-item">
-    <a href="#control-flow" title="Java">Control Flow</a>
+    <a href="#if-statements" title="Java">If statements</a>
   </li>
 
     
@@ -194,18 +193,7 @@
 
 
   <li class="toctree-l2 toc-item">
-    <a href="#loops" title="Java">Loops</a>
-  </li>
-
-    
-      
-
-  
-  
-
-
-  <li class="toctree-l2 toc-item">
-    <a href="#methods" title="Java">Methods</a>
+    <a href="#for-loops" title="Java">For loops</a>
   </li>
 
     
@@ -269,7 +257,7 @@
     
       
         
-          <li>Learning Tools &raquo;</li>
+          <li>Guide &raquo;</li>
         
       
     
@@ -284,10 +272,165 @@
             <div class="section">
               
                 <h1 id="variables">Variables</h1>
+<p>For the scope of programming the robot, the following are the most important variables.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td>Can be used to represent any Integer number. Examples are 0, 7, -16, 1253.</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Can be used to represent decimal values. Examples are 1.2, -643.1742, 3.14159</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Can be used to represent true or false</td>
+</tr>
+<tr>
+<td>String</td>
+<td>Can be used to represent a sequence of text. Examples are "Hello, world", "2 plus 1 is 3"</td>
+</tr>
+</tbody>
+</table>
+<p>For a complete list, visit <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html">Oracle's website</a></p>
+<pre><code class="java">int myVar;
+myVar = 2;
+
+int numOne = -5;
+double PI = 3.14159;
+boolean isRaining = false;
+String username = &quot;ch1ckenS1ayer123&quot;;
+</code></pre>
+
 <h1 id="operators">Operators</h1>
-<h1 id="control-flow">Control Flow</h1>
-<h1 id="loops">Loops</h1>
-<h1 id="methods">Methods</h1>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt; and &gt;=</td>
+<td>Greater than and greater than or equal to</td>
+</tr>
+<tr>
+<td>&lt; and &lt;=</td>
+<td>Less than and less than or equal to</td>
+</tr>
+<tr>
+<td>=</td>
+<td>Assignment. Used for setting variables</td>
+</tr>
+<tr>
+<td>==</td>
+<td>Checks if two variables are equal to each other</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Checks if two variables are not equal to each other</td>
+</tr>
+<tr>
+<td>+</td>
+<td>Adds two variables</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtracts two variables</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplies two variables</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Divides two variables</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Mod operator. Finds the remainder (11 % 3 = 2)</td>
+</tr>
+<tr>
+<td>++</td>
+<td>Increment. Increases a variable by one (varName++)</td>
+</tr>
+<tr>
+<td>--</td>
+<td>Decriment. Decreases a variable by one</td>
+</tr>
+<tr>
+<td>+=, /=, etc</td>
+<td>Applys the operation and updates the variable. (varName += 2)</td>
+</tr>
+</tbody>
+</table>
+<p>For more information, view: <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html">arithmetic operators</a> and <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html">equality operators</a></p>
+<h1 id="if-statements">If statements</h1>
+<pre><code class="java">boolean isRaining = false;
+boolean isCold = true;
+
+if(isRaining == true &amp;&amp; isCold == false) {
+    System.out.println(&quot;It's raining. Bring an umbrella!&quot;);
+} else if(isRaining == true &amp;&amp; isCold == true) {
+    System.out.println(&quot;It's snowing!&quot;);
+} else {
+    System.out.println(&quot;It's not raining&quot;);
+}
+</code></pre>
+
+<pre><code class="java">int temperature = 32;
+boolean willFreeze = false;
+boolean willBoil = false;
+
+if(temperature &lt; 32) {
+    willFreeze = true;
+} else if (temperature == 32) {
+    System.out.println(&quot;You are at the freezing point!&quot;);
+} else if(temperature &gt; 32 &amp;&amp; temperature &lt; 212) {
+    System.out.println(&quot;It's your every day boring temperature&quot;);
+} else if (temperature &gt;= 212) {
+    willBoil = true;
+} else if (temperature != 5) {
+    System.out.println(&quot;The temperature is not 5&quot;);
+} else {
+    System.out.println(&quot;Nothing interesting here&quot;);
+}
+</code></pre>
+
+<h1 id="for-loops">For loops</h1>
+<pre><code class="java">
+// for(variable to count with; when to stop; by how much the variable should be changed)
+
+// Prints the numbers 0 through 9
+for(int i = 0; i &lt; 10; i++) {
+    System.out.println(i);
+}
+
+// Prints the numbers 0 through 9 backwards
+for(int i = 9; i &gt;= 0; i--) {
+    System.out.println(i);
+}
+
+// Prints even numbers up to 20
+for(int i = 0; i &lt;= 20; i+=2) {
+    system.out.println(i);
+}
+
+// Prints (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), etc
+for(int x = 0; x &lt; 3; x++) {
+    for(int y = 0; y &lt; 3; y++) {
+        System.out.println(&quot;(&quot; + x + &quot;,&quot; + y + &quot;)&quot;);
+    }
+}
+</code></pre>
               
             </div>
           </div>

@@ -12,13 +12,13 @@
         },
         {
             "location": "/gettingStarted/gettingStarted/",
-            "text": "Installing JDK\n\n\n\n\nNavigate to Oracle's \ndownload\n page for JDK 8. At the time of writting this guide, JDK 10 is the most recent; however, WPI only supports JDK 8.\n\n\nAccept the license agreement and download the correct x64 bit version for your operating system. \n\n\nOnce the download is complete, run the installer. Make sure to leave the install directory as its default.\n\n\nOnce the installation finishes, restart your computer.\n\n\nTo verify that Java installed correctly, open CMD if you are on Windows or Terminal if you are on macOS. If you type \"java -version\" and \"javac -version\", and do not get an error, you are done! Please note that the final three digits do not need to match the output of the image \n\n\n\n\nInstalling Eclipse\n\n\n\n\nNavigate to Eclipse's \ndownload\n page and click \"Download 64bit\" under the \"Get Eclipse <version>\" heading.\n\n\nRun the installer. Once it loads, select \"Eclipse IDE for Java Developers\" and then click the install button.\n\n\n\n\nInstalling WPI",
+            "text": "Installing the JDK\n\n\n\n\nNavigate to Oracle's \ndownload\n page for JDK 8. At the time of writting this guide, JDK 10 is the most recent; however, WPI only supports JDK 8.\n\n\nAccept the license agreement and download the correct x64 bit version for your operating system. \n\n\nOnce the download is complete, run the installer. Make sure to leave the install directory as its default.\n\n\nOnce the installation finishes, restart your computer.\n\n\nTo verify that Java installed correctly, open CMD if you are on Windows or Terminal if you are on macOS. If you type \"java -version\" and \"javac -version\", and do not get an error, you are done! Please note that the final three digits do not need to match the output of the image \n\n\n\n\nInstalling Eclipse\n\n\n\n\nNavigate to Eclipse's \ndownload\n page and click \"Download 64bit\" under the \"Get Eclipse <version>\" heading.\n\n\nRun the installer. Once it loads, select \"Eclipse IDE for Java Developers\" and then click the install button.\n\n\n\n\nInstalling WPI\n\n\n\n\nIn Eclipse, click Help -> Install new software.\n\n\nIn the new Window (Install) that opens, click \"Add...\".\n\n\nIn the new Window (Add Repository), fill \"name\" with \"WPI\", and \"location\" with \"http://first.wpi.edu/FRC/roborio/release/eclipse/\".\n\n\nClick \"Ok\"",
             "title": "Setup"
         },
         {
-            "location": "/gettingStarted/gettingStarted/#installing-jdk",
+            "location": "/gettingStarted/gettingStarted/#installing-the-jdk",
             "text": "Navigate to Oracle's  download  page for JDK 8. At the time of writting this guide, JDK 10 is the most recent; however, WPI only supports JDK 8.  Accept the license agreement and download the correct x64 bit version for your operating system.   Once the download is complete, run the installer. Make sure to leave the install directory as its default.  Once the installation finishes, restart your computer.  To verify that Java installed correctly, open CMD if you are on Windows or Terminal if you are on macOS. If you type \"java -version\" and \"javac -version\", and do not get an error, you are done! Please note that the final three digits do not need to match the output of the image",
-            "title": "Installing JDK"
+            "title": "Installing the JDK"
         },
         {
             "location": "/gettingStarted/gettingStarted/#installing-eclipse",
@@ -27,43 +27,48 @@
         },
         {
             "location": "/gettingStarted/gettingStarted/#installing-wpi",
-            "text": "",
+            "text": "In Eclipse, click Help -> Install new software.  In the new Window (Install) that opens, click \"Add...\".  In the new Window (Add Repository), fill \"name\" with \"WPI\", and \"location\" with \"http://first.wpi.edu/FRC/roborio/release/eclipse/\".  Click \"Ok\"",
             "title": "Installing WPI"
         },
         {
             "location": "/gettingStarted/eclipse/",
-            "text": "",
+            "text": "Creating a Java Project\n\n\n\n\nOpen eclipse and make sure you see the Project Explorer tab. It is generally on the left side of the screen.\n\n\nIf you do not see it, go to Window->Show View->Project Explorer\n\n\n\n\n\n\nRight click the white space in the tab and click either New->Other or Ctrl+N\n\n\nSearch for \"Java Project\" and select it.\n\n\nIn the New Java Project window, fill in a name under \"Project name\" and click \"Finish\".\n\n\n\nFor the newly created project, click the dropdown arrow and you will see JRE System Library and src. Right click src and select New->Package. Give the package a name and click \"Finish\".\n\n\nGenerally, package names should be all lowercase and contain no spaces and symbols.\n\n\n\n\n\n\nRight click the newly created package and select New->Class. Select the \"public static void main(String[] args)\" checkbox and name the class. Since this is the class containing the main method, it is generally called Main.\n\n\n\nOpen the newly created class and you are ready to code!\n\n\n\n\nCreating a Robot Project",
             "title": "Using Eclipse"
         },
         {
+            "location": "/gettingStarted/eclipse/#creating-a-java-project",
+            "text": "Open eclipse and make sure you see the Project Explorer tab. It is generally on the left side of the screen.  If you do not see it, go to Window->Show View->Project Explorer    Right click the white space in the tab and click either New->Other or Ctrl+N  Search for \"Java Project\" and select it.  In the New Java Project window, fill in a name under \"Project name\" and click \"Finish\".  For the newly created project, click the dropdown arrow and you will see JRE System Library and src. Right click src and select New->Package. Give the package a name and click \"Finish\".  Generally, package names should be all lowercase and contain no spaces and symbols.    Right click the newly created package and select New->Class. Select the \"public static void main(String[] args)\" checkbox and name the class. Since this is the class containing the main method, it is generally called Main.  Open the newly created class and you are ready to code!",
+            "title": "Creating a Java Project"
+        },
+        {
+            "location": "/gettingStarted/eclipse/#creating-a-robot-project",
+            "text": "",
+            "title": "Creating a Robot Project"
+        },
+        {
             "location": "/tools/java/",
-            "text": "Variables\n\n\nOperators\n\n\nControl Flow\n\n\nLoops\n\n\nMethods",
+            "text": "Variables\n\n\nFor the scope of programming the robot, the following are the most important variables.\n\n\n\n\n\n\n\n\nVariable\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nint\n\n\nCan be used to represent any Integer number. Examples are 0, 7, -16, 1253.\n\n\n\n\n\n\ndouble\n\n\nCan be used to represent decimal values. Examples are 1.2, -643.1742, 3.14159\n\n\n\n\n\n\nboolean\n\n\nCan be used to represent true or false\n\n\n\n\n\n\nString\n\n\nCan be used to represent a sequence of text. Examples are \"Hello, world\", \"2 plus 1 is 3\"\n\n\n\n\n\n\n\n\nFor a complete list, visit \nOracle's website\n\n\nint myVar;\nmyVar = 2;\n\nint numOne = -5;\ndouble PI = 3.14159;\nboolean isRaining = false;\nString username = \"ch1ckenS1ayer123\";\n\n\n\n\nOperators\n\n\n\n\n\n\n\n\nOperator\n\n\nUse\n\n\n\n\n\n\n\n\n\n\n> and >=\n\n\nGreater than and greater than or equal to\n\n\n\n\n\n\n< and <=\n\n\nLess than and less than or equal to\n\n\n\n\n\n\n=\n\n\nAssignment. Used for setting variables\n\n\n\n\n\n\n==\n\n\nChecks if two variables are equal to each other\n\n\n\n\n\n\n!=\n\n\nChecks if two variables are not equal to each other\n\n\n\n\n\n\n+\n\n\nAdds two variables\n\n\n\n\n\n\n-\n\n\nSubtracts two variables\n\n\n\n\n\n\n*\n\n\nMultiplies two variables\n\n\n\n\n\n\n/\n\n\nDivides two variables\n\n\n\n\n\n\n%\n\n\nMod operator. Finds the remainder (11 % 3 = 2)\n\n\n\n\n\n\n++\n\n\nIncrement. Increases a variable by one (varName++)\n\n\n\n\n\n\n--\n\n\nDecriment. Decreases a variable by one\n\n\n\n\n\n\n+=, /=, etc\n\n\nApplys the operation and updates the variable. (varName += 2)\n\n\n\n\n\n\n\n\nFor more information, view: \narithmetic operators\n and \nequality operators\n\n\nIf statements\n\n\nboolean isRaining = false;\nboolean isCold = true;\n\nif(isRaining == true && isCold == false) {\n    System.out.println(\"It's raining. Bring an umbrella!\");\n} else if(isRaining == true && isCold == true) {\n    System.out.println(\"It's snowing!\");\n} else {\n    System.out.println(\"It's not raining\");\n}\n\n\n\n\nint temperature = 32;\nboolean willFreeze = false;\nboolean willBoil = false;\n\nif(temperature < 32) {\n    willFreeze = true;\n} else if (temperature == 32) {\n    System.out.println(\"You are at the freezing point!\");\n} else if(temperature > 32 && temperature < 212) {\n    System.out.println(\"It's your every day boring temperature\");\n} else if (temperature >= 212) {\n    willBoil = true;\n} else if (temperature != 5) {\n    System.out.println(\"The temperature is not 5\");\n} else {\n    System.out.println(\"Nothing interesting here\");\n}\n\n\n\n\nFor loops\n\n\n\n// for(variable to count with; when to stop; by how much the variable should be changed)\n\n// Prints the numbers 0 through 9\nfor(int i = 0; i < 10; i++) {\n    System.out.println(i);\n}\n\n// Prints the numbers 0 through 9 backwards\nfor(int i = 9; i >= 0; i--) {\n    System.out.println(i);\n}\n\n// Prints even numbers up to 20\nfor(int i = 0; i <= 20; i+=2) {\n    system.out.println(i);\n}\n\n// Prints (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), etc\nfor(int x = 0; x < 3; x++) {\n    for(int y = 0; y < 3; y++) {\n        System.out.println(\"(\" + x + \",\" + y + \")\");\n    }\n}",
             "title": "Java"
         },
         {
             "location": "/tools/java/#variables",
-            "text": "",
+            "text": "For the scope of programming the robot, the following are the most important variables.     Variable  Description      int  Can be used to represent any Integer number. Examples are 0, 7, -16, 1253.    double  Can be used to represent decimal values. Examples are 1.2, -643.1742, 3.14159    boolean  Can be used to represent true or false    String  Can be used to represent a sequence of text. Examples are \"Hello, world\", \"2 plus 1 is 3\"     For a complete list, visit  Oracle's website  int myVar;\nmyVar = 2;\n\nint numOne = -5;\ndouble PI = 3.14159;\nboolean isRaining = false;\nString username = \"ch1ckenS1ayer123\";",
             "title": "Variables"
         },
         {
             "location": "/tools/java/#operators",
-            "text": "",
+            "text": "Operator  Use      > and >=  Greater than and greater than or equal to    < and <=  Less than and less than or equal to    =  Assignment. Used for setting variables    ==  Checks if two variables are equal to each other    !=  Checks if two variables are not equal to each other    +  Adds two variables    -  Subtracts two variables    *  Multiplies two variables    /  Divides two variables    %  Mod operator. Finds the remainder (11 % 3 = 2)    ++  Increment. Increases a variable by one (varName++)    --  Decriment. Decreases a variable by one    +=, /=, etc  Applys the operation and updates the variable. (varName += 2)     For more information, view:  arithmetic operators  and  equality operators",
             "title": "Operators"
         },
         {
-            "location": "/tools/java/#control-flow",
-            "text": "",
-            "title": "Control Flow"
+            "location": "/tools/java/#if-statements",
+            "text": "boolean isRaining = false;\nboolean isCold = true;\n\nif(isRaining == true && isCold == false) {\n    System.out.println(\"It's raining. Bring an umbrella!\");\n} else if(isRaining == true && isCold == true) {\n    System.out.println(\"It's snowing!\");\n} else {\n    System.out.println(\"It's not raining\");\n}  int temperature = 32;\nboolean willFreeze = false;\nboolean willBoil = false;\n\nif(temperature < 32) {\n    willFreeze = true;\n} else if (temperature == 32) {\n    System.out.println(\"You are at the freezing point!\");\n} else if(temperature > 32 && temperature < 212) {\n    System.out.println(\"It's your every day boring temperature\");\n} else if (temperature >= 212) {\n    willBoil = true;\n} else if (temperature != 5) {\n    System.out.println(\"The temperature is not 5\");\n} else {\n    System.out.println(\"Nothing interesting here\");\n}",
+            "title": "If statements"
         },
         {
-            "location": "/tools/java/#loops",
-            "text": "",
-            "title": "Loops"
-        },
-        {
-            "location": "/tools/java/#methods",
-            "text": "",
-            "title": "Methods"
+            "location": "/tools/java/#for-loops",
+            "text": "// for(variable to count with; when to stop; by how much the variable should be changed)\n\n// Prints the numbers 0 through 9\nfor(int i = 0; i < 10; i++) {\n    System.out.println(i);\n}\n\n// Prints the numbers 0 through 9 backwards\nfor(int i = 9; i >= 0; i--) {\n    System.out.println(i);\n}\n\n// Prints even numbers up to 20\nfor(int i = 0; i <= 20; i+=2) {\n    system.out.println(i);\n}\n\n// Prints (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), etc\nfor(int x = 0; x < 3; x++) {\n    for(int y = 0; y < 3; y++) {\n        System.out.println(\"(\" + x + \",\" + y + \")\");\n    }\n}",
+            "title": "For loops"
         },
         {
             "location": "/tools/wpi/",

@@ -4,7 +4,7 @@ pages:
   - Getting Started: 
       - Setup: gettingStarted/gettingStarted.md
       - Using Eclipse: gettingStarted/eclipse.md
-  - Learning Tools:
+  - Guide:
       - Java: 'tools/java.md'
       - WPI: 'tools/wpi.md'
       - Github: 'tools/github.md'

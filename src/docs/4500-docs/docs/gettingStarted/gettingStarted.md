@@ -1,4 +1,4 @@
-# Installing JDK
+# Installing the JDK
 1. Navigate to Oracle's [download](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) page for JDK 8. At the time of writting this guide, JDK 10 is the most recent; however, WPI only supports JDK 8.
 2. Accept the license agreement and download the correct x64 bit version for your operating system. ![visual image](res/jdk_s2.PNG)
 3. Once the download is complete, run the installer. Make sure to leave the install directory as its default.
@@ -10,3 +10,8 @@
 2. Run the installer. Once it loads, select "Eclipse IDE for Java Developers" and then click the install button.
 
 # Installing WPI
+1. In Eclipse, click Help -> Install new software.
+2. In the new Window (Install) that opens, click "Add...".
+3. In the new Window (Add Repository), fill "name" with "WPI", and "location" with "http://first.wpi.edu/FRC/roborio/release/eclipse/".
+4. Click "Ok"
+![visual image](res/wpi_s1.PNG)
