@@ -6,9 +6,9 @@ https://frcteam4500.github.io
 # Updating docs
 
 ## Mkdocs
-1. The docs are created using [https://www.mkdocs.org/](Mkdocs). Navitage to the [https://www.mkdocs.org/#installation](install instructions) and follow them.
+1. The docs are created using [Mkdocs](https://www.mkdocs.org/). Navitage to the [install instructions](https://www.mkdocs.org/#installation) and follow them.
 2. Once installed, READ ALL the following pages for an explination on how to use it.
-3. The pages are created with markdown. Open [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](this) page for a cheatsheet.
+3. The pages are created with markdown. Open [this](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) page for a cheatsheet.
 
 ## Updating pages
 3. Navigate to src/docs/4500-docs/
