@@ -15,3 +15,5 @@
 3. In the new Window (Add Repository), fill "name" with "WPI", and "location" with "http://first.wpi.edu/FRC/roborio/release/eclipse/".
 4. Click "Ok"
 ![visual image](res/wpi_s1.PNG)
+
+# Installing Talon SRX Firmware

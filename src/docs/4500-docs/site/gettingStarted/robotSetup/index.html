@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Environment Setup - 4500 Docs</title>
+  <title>Robot Setup - 4500 Docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Environment Setup";
-    var mkdocs_page_input_path = "gettingStarted\\gettingStarted.md";
-    var mkdocs_page_url = "/gettingStarted/gettingStarted/";
+    var mkdocs_page_name = "Robot Setup";
+    var mkdocs_page_input_path = "gettingStarted\\robotSetup.md";
+    var mkdocs_page_url = "/gettingStarted/robotSetup/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -86,72 +86,13 @@
   
     
       
-<li class="current toctree-l1">
-  <a href="./" title="Environment Setup"
-      class="current">
+<li class=" toctree-l1">
+  <a href="../gettingStarted/" title="Environment Setup"
+      class="">
     Environment Setup
   </a>
 
   
-  
-    
-    
-      
-  
-  
-  
-  
-  
-  <ul class="current subnav">
-    
-      
-
-  
-  
-  
-
-
-  <li class="toctree-l2 toc-item">
-    <a href="#installing-the-jdk" title="Environment Setup">Installing the JDK</a>
-  </li>
-
-    
-      
-
-  
-  
-
-
-  <li class="toctree-l2 toc-item">
-    <a href="#installing-eclipse" title="Environment Setup">Installing Eclipse</a>
-  </li>
-
-    
-      
-
-  
-  
-
-
-  <li class="toctree-l2 toc-item">
-    <a href="#installing-wpi" title="Environment Setup">Installing WPI</a>
-  </li>
-
-    
-      
-
-  
-  
-
-
-  <li class="toctree-l2 toc-item">
-    <a href="#installing-talon-srx-firmware" title="Environment Setup">Installing Talon SRX Firmware</a>
-  </li>
-
-    
-  </ul>
-
-    
   
 </li>
     
@@ -167,13 +108,60 @@
 </li>
     
       
-<li class=" toctree-l1">
-  <a href="../robotSetup/" title="Robot Setup"
-      class="">
+<li class="current toctree-l1">
+  <a href="./" title="Robot Setup"
+      class="current">
     Robot Setup
   </a>
 
   
+  
+    
+    
+      
+  
+  
+  
+  
+  <ul class="current subnav">
+    
+      
+
+  
+  
+  
+
+
+  <li class="toctree-l2 toc-item">
+    <a href="#formating-roborio" title="Robot Setup">Formating RoboRIO</a>
+  </li>
+
+    
+      
+
+  
+  
+
+
+  <li class="toctree-l2 toc-item">
+    <a href="#configuring-radio" title="Robot Setup">Configuring Radio</a>
+  </li>
+
+    
+      
+
+  
+  
+
+
+  <li class="toctree-l2 toc-item">
+    <a href="#configuring-talonsrx" title="Robot Setup">Configuring TalonSRX</a>
+  </li>
+
+    
+  </ul>
+
+    
   
 </li>
     
@@ -272,7 +260,7 @@
         
       
     
-    <li>Environment Setup</li>
+    <li>Robot Setup</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -282,28 +270,9 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="installing-the-jdk">Installing the JDK</h1>
-<ol>
-<li>Navigate to Oracle's <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">download</a> page for JDK 8. At the time of writting this guide, JDK 10 is the most recent; however, WPI only supports JDK 8.</li>
-<li>Accept the license agreement and download the correct x64 bit version for your operating system. <img alt="visual image" src="../res/jdk_s2.PNG" /></li>
-<li>Once the download is complete, run the installer. Make sure to leave the install directory as its default.</li>
-<li>Once the installation finishes, restart your computer.</li>
-<li>To verify that Java installed correctly, open CMD if you are on Windows or Terminal if you are on macOS. If you type "java -version" and "javac -version", and do not get an error, you are done! Please note that the final three digits do not need to match the output of the image <img alt="visual image" src="../res/jdk_s5.PNG" /></li>
-</ol>
-<h1 id="installing-eclipse">Installing Eclipse</h1>
-<ol>
-<li>Navigate to Eclipse's <a href="http://www.eclipse.org/downloads/">download</a> page and click "Download 64bit" under the "Get Eclipse &lt;version>" heading.</li>
-<li>Run the installer. Once it loads, select "Eclipse IDE for Java Developers" and then click the install button.</li>
-</ol>
-<h1 id="installing-wpi">Installing WPI</h1>
-<ol>
-<li>In Eclipse, click Help -&gt; Install new software.</li>
-<li>In the new Window (Install) that opens, click "Add...".</li>
-<li>In the new Window (Add Repository), fill "name" with "WPI", and "location" with "http://first.wpi.edu/FRC/roborio/release/eclipse/".</li>
-<li>Click "Ok"
-<img alt="visual image" src="../res/wpi_s1.PNG" /></li>
-</ol>
-<h1 id="installing-talon-srx-firmware">Installing Talon SRX Firmware</h1>
+                <h1 id="formating-roborio">Formating RoboRIO</h1>
+<h1 id="configuring-radio">Configuring Radio</h1>
+<h1 id="configuring-talonsrx">Configuring TalonSRX</h1>
               
             </div>
           </div>
@@ -311,10 +280,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../eclipse/" class="btn btn-neutral float-right" title="Using Eclipse">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../tools/java/" class="btn btn-neutral float-right" title="Java">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../eclipse/" class="btn btn-neutral" title="Using Eclipse"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -340,10 +309,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../eclipse/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../eclipse/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../tools/java/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

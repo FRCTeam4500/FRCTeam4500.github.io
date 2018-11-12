@@ -17,7 +17,7 @@ myVar = 2;
 int numOne = -5;
 double PI = 3.14159;
 boolean isRaining = false;
-String username = "ch1ckenS1ayer123";
+String username = "ch1cken$1ayer123";
 ```
 
 # Operators
@@ -38,6 +38,7 @@ String username = "ch1ckenS1ayer123";
 | +=, /=, etc | Applys the operation and updates the variable. (varName += 2) |
 
 For more information, view: [arithmetic operators](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html) and [equality operators](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html)
+
 # If statements
 
 ```java
@@ -100,4 +101,80 @@ for(int x = 0; x < 3; x++) {
         System.out.println("(" + x + "," + y + ")");
     }
 }
+```
+
+# Arrays
+
+```java
+int[] myArray;
+myArray = new int[5];
+myArray[0] = 1;
+myArray[1] = 2;
+myArray[2] = 3;
+System.out.println(myArray[1]); // prints 2
+
+
+double myDoubleArray = new double[] {2.31, -1.26, 3.14, 2.71, 7.1};
+System.out.println(myDoubleArray[0]); // prints 2.31
+System.out.println(myDoubleArray[myDoubleArray.length-1]); // prints 7.1
+
+
+int[][] 2dArray = new int[][] {{2, 4}, {7, 1}, {9, 3}};
+System.out.println(2dArray[1][0]); // prints 7
+System.out.println(2dArray.length) // prints 3
+System.out.println(2dArray[0].length) // prints 2
+
+
+int[] counting = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+for(int i = 0; i < counting.length; i++) { // Prints each number in the array
+    System.out.println(counting[i]);
+}
+
+for(int c : counting) { // Same as the previous loop but shorter
+    System.out.println(c);
+}
+```
+
+# Classes
+
+```java
+public class Profile {
+
+    // Instance variables
+    private String username;
+    private String password;
+    private int age;
+
+    // Constructor
+    public Profile(String username, String password, int age) {
+        this.username = username;
+        this.password = password;
+        this.age = age;
+    }
+
+    // Getters and setters
+    public String getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+
+    // Functions
+    public boolean login(String username, String password) {
+        if(this.username.equals(username) && this.password.equals(password)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+```
+
+```java
+Profile jim = new Profile("Jim", "123", 21);
+System.out.println(jim.login("Alice", "supersecurepassword123")); // Prints false
+System.out.println(jim.login("Jim", "123")); // Prints true
+
+Profile jill = new Profile();
+jill.setAge(31);
+jill.setUsername("Jill");
+jill.setPassword("aXr2Lp?^2R&T");
 ```

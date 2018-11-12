@@ -2,8 +2,9 @@ site_name: '4500 Docs'
 pages:
   - Home: index.md
   - Getting Started: 
-      - Setup: gettingStarted/gettingStarted.md
+      - Environment Setup: gettingStarted/gettingStarted.md
       - Using Eclipse: gettingStarted/eclipse.md
+      - Robot Setup: gettingStarted/robotSetup.md
   - Guide:
       - Java: 'tools/java.md'
       - WPI: 'tools/wpi.md'
