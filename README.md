@@ -11,8 +11,8 @@ https://frcteam4500.github.io
 3. The pages are created with markdown. Open [this](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) page for a cheatsheet.
 
 ## Updating pages
-3. Navigate to src/docs/4500-docs/
-4. Make the following changes needed. run.bat will create a local server to view the site and build.bat will build the site.
-5. Once finished, run build.bat, commit, and push the changes.
+1. Navigate to src/docs/4500-docs/
+2. Make the following changes needed. run.bat will create a local server to view the site and build.bat will build the site.
+3. Once finished, run build.bat, commit, and push the changes.
     * Github will take time (usually no more then 2 hours) to cache the changes made to the actual site. Changes will not be instant
 
