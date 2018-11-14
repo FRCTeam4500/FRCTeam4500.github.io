@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-11-13</lastmod>
+     <lastmod>2018-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/gettingStarted/gettingStarted/</loc>
-     <lastmod>2018-11-13</lastmod>
+     <lastmod>2018-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/gettingStarted/eclipse/</loc>
-     <lastmod>2018-11-13</lastmod>
+     <lastmod>2018-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/gettingStarted/robotSetup/</loc>
-     <lastmod>2018-11-13</lastmod>
+     <lastmod>2018-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/tools/java/</loc>
-     <lastmod>2018-11-13</lastmod>
+     <lastmod>2018-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/tools/wpi/</loc>
-     <lastmod>2018-11-13</lastmod>
+     <lastmod>2018-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/tools/github/</loc>
-     <lastmod>2018-11-13</lastmod>
+     <lastmod>2018-11-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
