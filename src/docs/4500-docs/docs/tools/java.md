@@ -119,7 +119,8 @@ System.out.println(myDoubleArray[0]); // prints 2.31
 System.out.println(myDoubleArray[myDoubleArray.length-1]); // prints 7.1
 
 
-int[][] multiDimArray = new int[][] {{2, 4}, {7, 1}, {9, 3}};
+// Ignore the following comment. Github was being weird and couldn't compile without it
+// int[][] multiDimArray = new int[][] {{2, 4}, {7, 1}, {9, 3}};
 System.out.println(multiDimArray[1][0]); // prints 7
 System.out.println(multiDimArray.length); // prints 3
 System.out.println(multiDimArray[0].length); // prints 2
