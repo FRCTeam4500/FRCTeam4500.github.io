@@ -17,3 +17,5 @@
 ![visual image](res/wpi_s1.PNG)
 
 # Installing Talon SRX Firmware
+
+# Installing the FRC update suite
